@@ -1,0 +1,34 @@
+{
+    "name": "sed-syntax-highlighter",
+    "publisher": "joshua-beck",
+    "version": "0.0.1",
+    "licence": "GPL-2.0-or-later",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "sed",
+                "aliases": [
+                    "sed"
+                ],
+                "extensions": [
+                    ".sed;"
+                ],
+                "configuration": "./sed.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "sed",
+                "scopeName": "source.sed",
+                "path": "./syntaxes/sed.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    }
+}
